@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "a57abc95-0400-45b9-88ad-9d80b9f1048d",
+		"name": "Autocompletion API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12264671"
+	},
+	"item": [
+		{
+			"name": "autocompletions",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "demo-password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "demo-username",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"addressPrefix\": \"185\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/autocompletions",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"autocompletions"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "autocompletions",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"addressPrefix\": \"14\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/autocompletions",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"autocompletions"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 02 Dec 2023 00:31:29 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"us_auto_773e78badea84bbcb009\",\n    \"suggestions\": [\n        {\n            \"primaryLine\": \"14 TWIN OAKS CT\",\n            \"city\": \"GREENVILLE\",\n            \"state\": \"SC\",\n            \"zipCode\": \"29615\"\n        },\n        {\n            \"primaryLine\": \"14 TEVA DR\",\n            \"city\": \"STAR CITY\",\n            \"state\": \"AR\",\n            \"zipCode\": \"91355\"\n        },\n        {\n            \"primaryLine\": \"14 TELFORD CT\",\n            \"city\": \"HAYWARD\",\n            \"state\": \"CA\",\n            \"zipCode\": \"94544\"\n        },\n        {\n            \"primaryLine\": \"14 TELEPHONE RD\",\n            \"city\": \"OXFORD\",\n            \"state\": \"AR\",\n            \"zipCode\": \"72565\"\n        },\n        {\n            \"primaryLine\": \"14 TELEGA PL\",\n            \"city\": \"PALMDALE\",\n            \"state\": \"CA\",\n            \"zipCode\": \"93550\"\n        },\n        {\n            \"primaryLine\": \"14 TELEGRAM AVE\",\n            \"city\": \"ELMONT\",\n            \"state\": \"NY\",\n            \"zipCode\": \"11003\"\n        },\n        {\n            \"primaryLine\": \"14 TELEGRAM AVE\",\n            \"city\": \"GARDEN CITY\",\n            \"state\": \"KS\",\n            \"zipCode\": \"67846\"\n        },\n        {\n            \"primaryLine\": \"14 TELEGRAPH HILL RD\",\n            \"city\": \"HOLMDEL\",\n            \"state\": \"NJ\",\n            \"zipCode\": \"07733\"\n        },\n        {\n            \"primaryLine\": \"14 TELEGRAPH HILL RD S\",\n            \"city\": \"HOLMDEL\",\n            \"state\": \"NJ\",\n            \"zipCode\": \"07733\"\n        },\n        {\n            \"primaryLine\": \"14 TELEGRAPH HILL BLVD\",\n            \"city\": \"SAN FRANCISCO\",\n            \"state\": \"CA\",\n            \"zipCode\": \"94133\"\n        }\n    ]\n}"
+				}
+			]
+		}
+	]
+}

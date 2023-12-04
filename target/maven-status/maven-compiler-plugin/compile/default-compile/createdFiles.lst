@@ -1,0 +1,10 @@
+com/challenge1/module/entities/mapper/UsAutocompletionMapperImpl.class
+com/challenge1/module/entities/dtos/UsAutocompletionsWritableDto.class
+com/challenge1/module/configuration/BasicSecurityConfig.class
+com/challenge1/module/services/impl/AutocompletionServiceImpl.class
+com/challenge1/module/services/AutocompletionService.class
+com/challenge1/module/entities/mapper/UsAutocompletionMapper.class
+com/challenge1/module/DemoApplication.class
+com/challenge1/module/entities/dtos/SuggestionsDto.class
+com/challenge1/module/controllers/AutocompletionController.class
+com/challenge1/module/entities/dtos/UsAutocompletionsDto.class
