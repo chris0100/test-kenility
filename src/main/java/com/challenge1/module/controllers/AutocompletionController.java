@@ -6,6 +6,7 @@ import com.challenge1.module.services.AutocompletionService;
 import com.lob.api.ApiException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -21,7 +22,7 @@ public class AutocompletionController {
     private final AutocompletionService autocompletionService;
 
 
-    @PostMapping("/autocompletions")
+    @PostMapping(path = "/autocompletions", consumes = MediaType.APPLICATION_JSON_VALUE,produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<UsAutocompletionsDto> autocompletion(@RequestBody UsAutocompletionsWritableDto usAutocompletionsWritableDto) throws ApiException {
         return new ResponseEntity<>(autocompletionService.autocomplete(usAutocompletionsWritableDto), HttpStatus.OK);
     }
